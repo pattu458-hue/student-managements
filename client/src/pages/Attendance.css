@@ -1,0 +1,114 @@
+/* 🎨 General Container */
+.attendance-container {
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Title */
+.attendance-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease;
+}
+
+/* 📋 Table Styling */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-table th {
+  background: #1976d2;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.attendance-table tr:hover {
+  background: #e3f2fd;
+  transition: background 0.3s ease;
+}
+
+/* 🎯 Select Dropdown */
+.attendance-table select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #1976d2;
+  background: #f9f9f9;
+  color: #1976d2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.attendance-table select:hover {
+  background: #bbdefb;
+  transform: scale(1.05);
+}
+
+/* 🚀 Submit Button */
+.attendance-table button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #43a047;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.attendance-table button:hover {
+  background: #2e7d32;
+  transform: scale(1.1);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .attendance-table th,
+  .attendance-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .attendance-title {
+    font-size: 1.5rem;
+  }
+
+  .attendance-table select,
+  .attendance-table button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+/* 🎬 Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
